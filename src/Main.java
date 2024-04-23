@@ -32,9 +32,7 @@ public class Main {
     public static int getNumberPower(int number, int power) {
         int result = 1;
 
-        if (power == 1) {
-            return number;
-        } else if (power > 1) {
+        if (power >= 1) {
             for (int i = 0; i < power; i++) {
                 result *= number;
             }
